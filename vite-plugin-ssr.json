@@ -2,10 +2,10 @@
   "version": "0.4.142",
   "usesClientRouter": false,
   "manifestKeyMap": {
-    "@brillout/docpress/renderer/_default.page.server.js": "../node_modules/.pnpm/@brillout+docpress@0.5.10_@types+node@15.14.9_react-dom@18.2.0_react@18.2.0_rollup@3.27.2/node_modules/@brillout/docpress/dist/renderer/_default.page.server.js",
-    "@brillout/docpress/renderer/_default.page.server.css": "../node_modules/.pnpm/@brillout+docpress@0.5.10_@types+node@15.14.9_react-dom@18.2.0_react@18.2.0_rollup@3.27.2/node_modules/@brillout/docpress/dist/renderer/_default.page.server.css",
-    "@brillout/docpress/renderer/_default.page.client.js": "../node_modules/.pnpm/@brillout+docpress@0.5.10_@types+node@15.14.9_react-dom@18.2.0_react@18.2.0_rollup@3.27.2/node_modules/@brillout/docpress/dist/renderer/_default.page.client.js",
-    "@brillout/docpress/renderer/_default.page.client.css": "../node_modules/.pnpm/@brillout+docpress@0.5.10_@types+node@15.14.9_react-dom@18.2.0_react@18.2.0_rollup@3.27.2/node_modules/@brillout/docpress/dist/renderer/_default.page.client.css"
+    "@brillout/docpress/renderer/_default.page.server.js": "../node_modules/.pnpm/@brillout+docpress@0.5.11_@types+node@15.14.9_react-dom@18.2.0_react@18.2.0_rollup@3.27.2/node_modules/@brillout/docpress/dist/renderer/_default.page.server.js",
+    "@brillout/docpress/renderer/_default.page.server.css": "../node_modules/.pnpm/@brillout+docpress@0.5.11_@types+node@15.14.9_react-dom@18.2.0_react@18.2.0_rollup@3.27.2/node_modules/@brillout/docpress/dist/renderer/_default.page.server.css",
+    "@brillout/docpress/renderer/_default.page.client.js": "../node_modules/.pnpm/@brillout+docpress@0.5.11_@types+node@15.14.9_react-dom@18.2.0_react@18.2.0_rollup@3.27.2/node_modules/@brillout/docpress/dist/renderer/_default.page.client.js",
+    "@brillout/docpress/renderer/_default.page.client.css": "../node_modules/.pnpm/@brillout+docpress@0.5.11_@types+node@15.14.9_react-dom@18.2.0_react@18.2.0_rollup@3.27.2/node_modules/@brillout/docpress/dist/renderer/_default.page.client.css"
   },
   "baseServer": "/",
   "baseAssets": "/",
