@@ -19,7 +19,7 @@
 <p>There are no breaking changes: the only change is that, starting from version <code>0.4.142</code>, you&#x27;ll have to use the <a href="https://www.npmjs.com/package/vike">npm package <code>vike</code></a> instead of the <a href="https://www.npmjs.com/package/vite-plugin-ssr">npm package <code>vite-plugin-ssr</code></a>. We recommend applying following find-and-replace bash script:</p>
 <div data-rehype-pretty-code-fragment=""><pre data-language="bash" data-theme="default"><code data-language="bash" data-theme="default"><span class="line"><span style="color:#24292F">grep ite-plugin-ssr --exclude-dir node_modules/ --exclude-dir .git/ </span><span style="color:#CF222E">|</span><span style="color:#24292F"> xargs sed -i </span><span style="color:#0A3069">&#x27;s/ite-plugin-ssr/ike/g&#x27;</span></span></code></pre></div>
 <blockquote>
-<p>The version <code>0.4.142</code> is the only version that is dual published as <code>vite-plugin-ssr@0.4.142</code>/<code>vike@0.4.142</code>, enabling you to migrate to <code>vike</code> simply applying this bash script.</p>
+<p><code>0.4.142</code> is the only version that is dual published as <code>vite-plugin-ssr@0.4.142</code>/<code>vike@0.4.142</code>, enabling you to migrate to <code>vike</code> simply applying this bash script.</p>
 </blockquote>
 <blockquote>
 <p>If this bash script doesn&#x27;t work out for you, let us know.</p>
