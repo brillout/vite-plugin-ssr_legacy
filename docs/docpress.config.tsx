@@ -1,3 +1,4 @@
+import { Warning, Link } from '@brillout/docpress'
 import type { Config } from '@brillout/docpress'
 import { headings } from './headings'
 import { headingsDetached } from './headingsDetached'
@@ -23,5 +24,19 @@ export default {
     indexName: 'vite-pluginssr'
   },
   bannerUrl: 'https://vite-plugin-ssr.com/banner.png',
-  i18n: true
+  i18n: true,
+  globalNote: <GlobalNoteWarning />
 } satisfies Config
+
+function GlobalNoteWarning() {
+  return (
+    <>
+      <div style={{ display: 'flex', justifyContent: 'center', textAlign: 'center' }}>
+        <Warning>
+          <code>vite-plugin-ssr</code> has been renamed <a href="https://vike.dev">Vike</a> (
+          <Link href="/vike">migration guide</Link>).
+        </Warning>
+      </div>
+    </>
+  )
+}
