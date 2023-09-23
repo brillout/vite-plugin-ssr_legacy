@@ -25,16 +25,16 @@ export default {
   },
   bannerUrl: 'https://vite-plugin-ssr.com/banner.png',
   i18n: true,
-  globalNote: <GlobalNoteWarning />
+  globalNote: <GlobalNoteRename />
 } satisfies Config
 
-function GlobalNoteWarning() {
+function GlobalNoteRename() {
   return (
     <>
       <div style={{ display: 'flex', justifyContent: 'center', textAlign: 'center' }}>
         <Warning>
-          <code>vite-plugin-ssr</code> has been renamed <a href="https://vike.dev">Vike</a> (
-          <Link href="/vike">migration guide</Link>).
+          <code>vite-plugin-ssr</code> has been renamed <a href="https://vike.dev">Vike</a>, see{' '}
+          <Link href="/vike">migration guide</Link>.
         </Warning>
       </div>
     </>
