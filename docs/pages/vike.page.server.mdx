@@ -21,7 +21,7 @@ grep -rl 'github.*brillout/vike' --exclude-dir node_modules/ --exclude-dir .git/
 Same as a single line (copy-paste me):
 
 ```bash
-grep -rl vite-plugin-ssr.com --exclude-dir node_modules/ --exclude-dir .git/ --exclude "*lock*" | xargs sed -i 's/vite-plugin-ssr\.com/vike.dev/g' ; grep -rl ite-plugin-ssr --exclude-dir node_modules/ --exclude-dir .git/ --exclude "*lock*" | xargs sed -i 's/ite-plugin-ssr/ike/g' ; grep -rl 'github.*brillout/vike' --exclude-dir node_modules/ --exclude-dir .git/ --exclude "*lock*" | xargs sed -i 's/brillout\/vike/vikejs\/vike/g'
+grep -rl vite-plugin-ssr.com --exclude-dir node_modules/ --exclude-dir .git/ --exclude "*lock*" | xargs sed -i 's/vite-plugin-ssr\.com/vike.dev/g' 2>/dev/null ; grep -rl ite-plugin-ssr --exclude-dir node_modules/ --exclude-dir .git/ --exclude "*lock*" | xargs sed -i 's/ite-plugin-ssr/ike/g' 2>/dev/null ; grep -rl 'github.*brillout/vike' --exclude-dir node_modules/ --exclude-dir .git/ --exclude "*lock*" | xargs sed -i 's/brillout\/vike/vikejs\/vike/g' 2>/dev/null
 ```
 
 Then update your lock file.
