@@ -16,12 +16,23 @@ grep -rl ite-plugin-ssr --exclude-dir node_modules/ --exclude-dir .git/ --exclud
 
 # Upcate comments: Fix GitHub links to github.com/vikejs/vike repository
 grep -rl 'github.*brillout/vike' --exclude-dir node_modules/ --exclude-dir .git/ --exclude "*lock*" | xargs sed -i 's/brillout\/vike/vikejs\/vike/g'
-
-# Update lock file
-pnpm install # or npm install / yarn install
 ```
 
-> `0.4.142` is the only version that is dual published as `vite-plugin-ssr@0.4.142`/`vike@0.4.142`, enabling you to migrate to `vike` simply by applying this bash script.
+Same as a single line (copy-paste me):
+
+```bash
+grep -rl vite-plugin-ssr.com --exclude-dir node_modules/ --exclude-dir .git/ --exclude "*lock*" | xargs sed -i 's/vite-plugin-ssr\.com/vike.dev/g' && grep -rl ite-plugin-ssr --exclude-dir node_modules/ --exclude-dir .git/ --exclude "*lock*" | xargs sed -i 's/ite-plugin-ssr/ike/g' && grep -rl 'github.*brillout/vike' --exclude-dir node_modules/ --exclude-dir .git/ --exclude "*lock*" | xargs sed -i 's/brillout\/vike/vikejs\/vike/g'
+```
+
+Then update your lock file.
+
+```bash
+npm install
+# pnpm install
+# yarn install
+```
+
+> `0.4.142` is the only version that is dual published as `vite-plugin-ssr@0.4.142`/`vike@0.4.142`, enabling you to migrate to `vike` simply by applying the bash script above.
 >
 > If the bash script doesn't work out for you, let us know.
 
