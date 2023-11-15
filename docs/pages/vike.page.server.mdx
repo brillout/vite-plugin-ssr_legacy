@@ -14,7 +14,7 @@ grep -rl vite-plugin-ssr.com --exclude-dir node_modules/ --exclude-dir .git/ --e
 # Core update. (We omit "v" to preserve upper-/lowercase.)
 grep -rl ite-plugin-ssr --exclude-dir node_modules/ --exclude-dir .git/ --exclude "*lock*" | xargs sed -i 's/ite-plugin-ssr/ike/g'
 
-# Upcate comments: Fix GitHub links to github.com/vikejs/vike repository
+# Update comments: Fix GitHub links to github.com/vikejs/vike repository
 grep -rl 'github.*brillout/vike' --exclude-dir node_modules/ --exclude-dir .git/ --exclude "*lock*" | xargs sed -i 's/brillout\/vike/vikejs\/vike/g'
 ```
 
