@@ -33,8 +33,13 @@ function GlobalNoteRename() {
     <>
       <div style={{ display: 'flex', justifyContent: 'center', textAlign: 'center' }}>
         <Warning>
-          <code>vite-plugin-ssr</code> has been renamed <a href="https://vike.dev">Vike</a>, see{' '}
-          <Link href="/vike">migration guide</Link>.
+          The <code>vite-plugin-ssr</code> project has been renamed <a href="https://vike.dev">Vike</a>.
+          <ul style={{ textAlign: 'left', width: 400, marginLeft: 15 }}>
+            <li>
+              If you are already using vite-plugin-ssr then <Link href="/vike">migrate to Vike</Link>.
+            </li>
+            <li>For new projects, don't use vite-plugin-ssr but use Vike instead.</li>
+          </ul>
         </Warning>
       </div>
     </>
