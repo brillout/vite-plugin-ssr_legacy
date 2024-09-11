@@ -60,6 +60,9 @@
           }
         }
       }
+    },
+    "patchedDependencies": {
+      "@brillout/docpress@0.5.11": "patches/@brillout__docpress@0.5.11.patch"
     }
   },
   "packageManager": "pnpm@9.6.0"

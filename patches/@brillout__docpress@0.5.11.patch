@@ -1,0 +1,38 @@
+diff --git a/dist/index.js b/dist/index.js
+index 3134980d19303db56185300070e45b8f10a1df8a..6b3ba2720fb24b853bf3205777caebf70d2f3ec7 100644
+--- a/dist/index.js
++++ b/dist/index.js
+@@ -222,18 +222,19 @@ function NoteGeneric({
+   if (type) {
+     className = `${className} type-${type}`;
+   }
++  // Backported patch https://github.com/brillout/docpress/commit/ffa9094e540f0d4590cc06a2fffd1a2f99ad01a6
+   if (!icon && type) {
+     let classColor = "";
+     if (type === "danger") {
+-      icon = ":no_entry:";
++      icon = '⛔'
+       classColor = "note-color-red";
+     }
+     if (type === "warning") {
+-      icon = ":warning:";
++      icon = '⚠️'
+       classColor = "note-color-yellow";
+     }
+     if (type === "construction") {
+-      icon = ":construction:";
++      icon = '🚧'
+       classColor = "note-color-yellow";
+     }
+     assert(icon);
+@@ -244,7 +245,9 @@ function NoteGeneric({
+     className
+   }, /* @__PURE__ */ React4.createElement("div", {
+     style: { marginBottom: 20 }
+-  }), icon, " ", /* @__PURE__ */ React4.createElement("div", {
++  }), React4.createElement("span", {
++    style: { fontFamily: 'emoji' }
++  }, icon), " ", /* @__PURE__ */ React4.createElement("div", {
+     className: "blockquote-content"
+   }, children), /* @__PURE__ */ React4.createElement("div", {
+     style: { marginTop: 20 }
